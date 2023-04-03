@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing;
 
 use ClaudioDekker\LaravelAuth\Testing\Partials\Settings\PublicKey\ConfirmPublicKeyCredentialRegistrationTests;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuthBladebones;
 
 use ClaudioDekker\LaravelAuthBladebones\Console\GenerateCommand;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuthBladebones\Tests;
 
 use ClaudioDekker\LaravelAuthBladebones\LaravelAuthBladebonesServiceProvider;

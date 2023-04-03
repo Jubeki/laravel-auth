@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Notifications;
 
 use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;

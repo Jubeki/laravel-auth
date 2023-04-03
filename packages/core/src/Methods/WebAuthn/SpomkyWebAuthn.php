@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Methods\WebAuthn;
 
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\Contracts\WebAuthnContract;

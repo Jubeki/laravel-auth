@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing\Partials\Challenges\Recovery;
 
 use App\Providers\RouteServiceProvider;

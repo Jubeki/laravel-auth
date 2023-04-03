@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing\Partials\RateLimiting;
 
 use ClaudioDekker\LaravelAuth\Events\SudoModeEnabled;

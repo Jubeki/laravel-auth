@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuthBladebones\Testing;
 
 use ClaudioDekker\LaravelAuthBladebones\Testing\Partials\AccountRecoveryChallengeViewTests;

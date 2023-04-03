@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Http\Controllers\Settings;
 
 use ClaudioDekker\LaravelAuth\Events\RecoveryCodesGenerated;

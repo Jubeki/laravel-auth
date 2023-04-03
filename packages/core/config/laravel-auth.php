@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Enums\AttestationConveyancePreference;
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Enums\AuthenticatorAttachment;
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Enums\COSEAlgorithmIdentifier;

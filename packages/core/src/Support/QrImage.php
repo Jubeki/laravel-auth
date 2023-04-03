@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Support;
 
 use BaconQrCode\Renderer\Color\Alpha;

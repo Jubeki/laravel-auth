@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth;
 
 use ClaudioDekker\LaravelAuth\Methods\Totp\Contracts\TotpContract;

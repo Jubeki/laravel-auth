@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuthBladebones\Testing\Partials;
 
 trait AccountRecoveryRequestViewTests

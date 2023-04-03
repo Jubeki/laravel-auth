@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Events;
 
 use ClaudioDekker\LaravelAuth\CredentialType;

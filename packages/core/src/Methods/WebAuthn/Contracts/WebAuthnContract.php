@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Methods\WebAuthn\Contracts;
 
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\Objects\CredentialAttributes;

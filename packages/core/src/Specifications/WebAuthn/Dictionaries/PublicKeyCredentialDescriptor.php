@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Dictionaries;
 
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Enums\PublicKeyCredentialType;

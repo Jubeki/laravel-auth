@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuthBladebones\Testing\Partials;
 
 use ClaudioDekker\LaravelAuth\Http\Middleware\EnsureSudoMode;

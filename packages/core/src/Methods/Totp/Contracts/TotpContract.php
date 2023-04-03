@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Methods\Totp\Contracts;
 
 use ClaudioDekker\LaravelAuth\Support\QrImage;

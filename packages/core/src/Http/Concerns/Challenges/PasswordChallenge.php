@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Http\Concerns\Challenges;
 
 use ClaudioDekker\LaravelAuth\Http\Concerns\EmitsAuthenticationEvents;

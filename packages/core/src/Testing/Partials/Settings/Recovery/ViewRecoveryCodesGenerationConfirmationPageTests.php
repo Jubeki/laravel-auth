@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing\Partials\Settings\Recovery;
 
 use Illuminate\Support\Facades\Session;

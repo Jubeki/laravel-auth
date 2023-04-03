@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing\Partials\Challenges\MultiFactor;
 
 use App\Providers\RouteServiceProvider;

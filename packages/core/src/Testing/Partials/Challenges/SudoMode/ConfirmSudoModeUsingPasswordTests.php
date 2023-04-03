@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ClaudioDekker\LaravelAuth\Testing\Partials\Challenges\SudoMode;
 
 use ClaudioDekker\LaravelAuth\Events\SudoModeChallenged;
