@@ -6,6 +6,8 @@ use ClaudioDekker\LaravelAuth\Methods\Totp\Contracts\TotpContract;
 use ClaudioDekker\LaravelAuth\Methods\Totp\GoogleTwoFactorAuthenticator;
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\Contracts\WebAuthnContract;
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\SpomkyWebAuthn;
+use ClaudioDekker\LaravelAuth\Models\Contracts\AuthenticatableContract;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelAuthServiceProvider extends ServiceProvider
@@ -34,6 +36,10 @@ class LaravelAuthServiceProvider extends ServiceProvider
 
         $this->app->bind(TotpContract::class, GoogleTwoFactorAuthenticator::class);
         $this->app->bind(WebAuthnContract::class, SpomkyWebAuthn::class);
+
+        LaravelAuth::useUserModel(
+            config('laravel-auth.models.user')
+        );
     }
 
     /**
