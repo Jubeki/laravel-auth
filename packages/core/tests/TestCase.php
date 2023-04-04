@@ -35,6 +35,8 @@ class TestCase extends Orchestra
             'database' => ':memory:',
             'prefix' => '',
         ]);
+
+        config()->set('laravel-auth.models.user', TestUser::class);
     }
 
     /**
