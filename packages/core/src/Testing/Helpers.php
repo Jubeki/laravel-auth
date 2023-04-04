@@ -8,10 +8,10 @@ use ClaudioDekker\LaravelAuth\LaravelAuth;
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\Contracts\WebAuthnContract;
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\Objects\CredentialAttributes;
 use ClaudioDekker\LaravelAuth\Methods\WebAuthn\SpomkyWebAuthn;
-use ClaudioDekker\LaravelAuth\Models\Contracts\AuthenticatableContract;
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Dictionaries\PublicKeyCredentialCreationOptions;
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Dictionaries\PublicKeyCredentialRequestOptions;
 use ClaudioDekker\LaravelAuth\Specifications\WebAuthn\Dictionaries\PublicKeyCredentialUserEntity;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
@@ -37,7 +37,7 @@ trait Helpers
         return RateLimiter::attempts("auth::$key");
     }
 
-    protected function generateUser($overrides = []): Model&AuthenticatableContract
+    protected function generateUser($overrides = []): Model&Authenticatable
     {
         $userModelClass = LaravelAuth::userModel();
 

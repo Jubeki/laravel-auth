@@ -42,8 +42,6 @@ class LaravelAuth
 
     /**
      * Get the User model class name.
-     * 
-     * @return class-string<\ClaudioDekker\LaravelAuth\Models\Contracts\AuthenticatableContract&\Illuminate\Database\Eloquent\Model>
      */
     public static function userModel(): string
     {
