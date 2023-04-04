@@ -2,7 +2,7 @@
 
 namespace ClaudioDekker\LaravelAuth;
 
-use ClaudioDekker\LaravelAuth\Models\Contracts\AuthenticatableContract;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 
 class LaravelAuth
@@ -41,8 +41,8 @@ class LaravelAuth
             throw new \Exception("The user model class [{$model}] must extend [".Model::class."].");
         }
 
-        if (! is_subclass_of($model, AuthenticatableContract::class, true)) {
-            throw new \Exception("The user model class [{$model}] must implement [".AuthenticatableContract::class."].");
+        if (! is_subclass_of($model, Authenticatable::class, true)) {
+            throw new \Exception("The user model class [{$model}] must implement [".Authenticatable::class."].");
         }
 
         static::$userModel = $model;
