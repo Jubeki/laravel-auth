@@ -37,14 +37,6 @@ class LaravelAuth
      */
     public static function useUserModel(string $model): void
     {
-        if (! is_subclass_of($model, Model::class, true)) {
-            throw new \Exception("The user model class [{$model}] must extend [".Model::class."].");
-        }
-
-        if (! is_subclass_of($model, Authenticatable::class, true)) {
-            throw new \Exception("The user model class [{$model}] must implement [".Authenticatable::class."].");
-        }
-
         static::$userModel = $model;
     }
 
