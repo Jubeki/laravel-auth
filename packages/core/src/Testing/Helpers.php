@@ -45,6 +45,11 @@ trait Helpers
         ], $overrides));
     }
 
+    protected function authenticated($overrides = [])
+    {
+        return $this->actingAs($this->generateUser($overrides));
+    }
+
     protected function submitPasswordBasedRegisterAttempt($overrides = []): TestResponse
     {
         return $this->post(route('register'), array_merge([
